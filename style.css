@@ -1,64 +1,57 @@
- * {
-    box-sizing: border-box;
- }
- 
- body {
-    background-color: hsl(212, 45%, 89%);
+* {
     margin: 0;
     padding: 0;
-    font-family: "Outfit", sans-serif;
- }
- 
- .attribution { 
-    font-size: 11px; text-align: center; 
+    box-sizing: border-box;
 }
 
-.attribution a {
-    color: hsl(228, 45%, 44%); 
+body {
+    background-color: hsl(212, 45%, 89%);
+    height: 100%;
+    padding: 200px 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
-    padding: 16px;
-    margin: 10em auto;
-    width: 300px;
     background-color: white;
-    border-radius: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 1.5em;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .card img{
     width: 100%;
-    border-radius: 8px;
-    display: block;
-    margin: 0 auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
 }
 
-.card h2 {
-    font-size: 19px;
-    text-align: center;
-    color:  hsl(218, 44%, 22%);
+.card h1{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: hsl(218, 44%, 22%);
 }
 
-.card p {
-    font-size: 15px;
-    text-align: center;
-    color:  hsl(216, 15%, 48%);
+.card p{
+    font-size: 14px;
+    color: hsl(220, 15%, 55%)
 }
 
-/* Mobile version*/
+ .attribution { 
+    font-size: 11px; text-align: center; 
+    padding: 10px;
+}
 
-@media (max-width: 375px){
-    .card{
-        padding: 12px;
-        width: 90%;
-    }
-
-    .card h2{
-        font-size: 16px;
-        margin: 8px 0 6px;
-    }
-
-    .card p {
-        font-size: 13px;
-    }
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
